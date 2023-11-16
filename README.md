@@ -1,2 +1,2 @@
-# Learn Go as soon as possible
+# 🎓 Learn Go as soon as possible
 
