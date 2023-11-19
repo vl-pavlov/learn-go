@@ -9,3 +9,12 @@ Go, also known as Golang, is an open-source programming language developed in 20
 ## 010. Algorithms
 
 ## 011. Standard library
+
+## 100. OOP Patterns
+
+## 101. Concurrency patterns
+
+## 110. Web-applications
+
+## 111. Others
+
