@@ -20,3 +20,8 @@ This guide aims to provide a structured path for learning Go, from the basics to
 
 ## 111. Others
 
+## Further Reading
+
+- [The Go Programming Language Specification](https://golang.org/ref/spec)
+- [Effective Go](https://golang.org/doc/effective_go)
+- [Go by Example](https://gobyexample.com/)
