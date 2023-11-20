@@ -8,4 +8,5 @@
 
 ## Control flow
 
+## Bitwise operations
 
