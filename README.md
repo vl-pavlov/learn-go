@@ -6,19 +6,35 @@ This guide aims to provide a structured path for learning Go, from the basics to
 
 ## 000. Basics
 
+Start your journey here if you're new to Go. This section covers the fundamentals of the language, including syntax, data types, and control structures.
+
 ## 001. Data structures
+
+After grasping the basics, learn about Go's built-in data structures like slices, maps, and structs.
 
 ## 010. Algorithms
 
+Explore common algorithms and how to implement them in Go.
+
 ## 011. Standard library
+
+The Go standard library is vast and powerful. This section highlights useful packages and how to use them.
 
 ## 100. OOP Patterns
 
+Understand how Go supports object-oriented programming through interfaces and embedding.
+
 ## 101. Concurrency
+
+Go makes concurrency easy and efficient. Learn about goroutines and channels, and how to synchronize them.
 
 ## 110. Web-applications
 
+Build web applications using Go.
+
 ## 111. Others
+
+Explore other interesting topics in Go
 
 ## Further Reading
 
