@@ -44,4 +44,24 @@ func main() {
 	duration := futureTime.Sub(currentTime)
 	fmt.Println("Duration:", duration)
 
+	//--	Time Zones
+
+	// In the time package in Go, time zones are handled using the Location type and the LoadLocation function.
+
+	// Loading a location:
+	loc, err := time.LoadLocation("Europe/Moscow")
+	if err != nil {
+		fmt.Println("Error loading location:", err)
+		return
+	}
+
+	// Creating a time object with a specific location:
+	t := time.Date(2022, time.January, 1, 12, 0, 0, 0, loc)
+	fmt.Println("Time in Moscow:", t)
+
+	// Converting time to a different location:
+	locUTC, _ := time.LoadLocation("UTC")
+	tUTC := t.In(locUTC)
+	fmt.Println("Time in UTC:", tUTC)
+
 }
