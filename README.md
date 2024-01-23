@@ -20,7 +20,7 @@ Explore common algorithms and how to implement them in Go.
 
 The Go standard library is vast and powerful. This section highlights useful packages and how to use them.
 
-## 100. OOP Patterns
+## 100. OOP
 
 Understand how Go supports object-oriented programming through interfaces and embedding.
 
