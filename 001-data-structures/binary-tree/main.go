@@ -6,16 +6,19 @@ import (
 	"os"
 )
 
+// BinaryNode represents a node in a binary tree with a left and right child node and an integer data value.
 type BinaryNode struct {
-	left  *BinaryNode
-	right *BinaryNode
-	data  int64
+	left  *BinaryNode // Pointer to the left child node
+	right *BinaryNode // Pointer to the right child node
+	data  int64       // Integer data value stored in the node
 }
 
+// BinaryTree represents a binary tree with a root node.
 type BinaryTree struct {
-	root *BinaryNode
+	root *BinaryNode // Pointer to the root node of the binary tree
 }
 
+// insert inserts a new integer value into the binary tree.
 func (t *BinaryTree) insert(data int64) *BinaryTree {
 	if t.root == nil {
 		t.root = &BinaryNode{data: data, left: nil, right: nil}
@@ -25,6 +28,7 @@ func (t *BinaryTree) insert(data int64) *BinaryTree {
 	return t
 }
 
+// insert inserts a new integer value into the binary tree, recursively traversing the tree to find the correct location.
 func (n *BinaryNode) insert(data int64) {
 	if n == nil {
 		return
@@ -43,6 +47,7 @@ func (n *BinaryNode) insert(data int64) {
 	}
 }
 
+// print prints the binary tree in a human-readable format, with indentation and labels for each node.
 func print(w io.Writer, node *BinaryNode, ns int, ch rune) {
 	if node == nil {
 		return
@@ -56,6 +61,7 @@ func print(w io.Writer, node *BinaryNode, ns int, ch rune) {
 	print(w, node.right, ns+2, 'R')
 }
 
+// main is the entry point of the program, where the binary tree is constructed and printed.
 func main() {
 	tree := &BinaryTree{}
 
