@@ -41,3 +41,4 @@ Explore other interesting topics in Go
 - [The Go Programming Language Specification](https://golang.org/ref/spec)
 - [Effective Go](https://golang.org/doc/effective_go)
 - [Go by Example](https://gobyexample.com/)
+- [Go Perfbook](https://github.com/dgryski/go-perfbook)
