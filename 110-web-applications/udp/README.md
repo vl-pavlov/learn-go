@@ -1,0 +1,3 @@
+# UDP
+
+The User Datagram Protocol, or UDP, is a communications protocol used on the Internet for particularly time-sensitive transmissions, such as video playback or DNS lookups. It speeds up communication by not formally establishing a connection before data is transferred. This allows data to be transferred very quickly, but it can also cause packets to be lost in transit - creating opportunities for exploitation in the form of DDoS attacks.
