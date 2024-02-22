@@ -5,6 +5,8 @@ import (
 )
 
 func main() {
+	//--	CREATING
+
 	// Create string using var
 	var part1 = "⌘I love"
 
@@ -14,6 +16,8 @@ func main() {
 	// Represent string with `  ` (row string)
 	part3 := `Programming`
 
+	//--	CONCATENATION
+
 	// Join parts to make a sentence
 	sentence := fmt.Sprintf("%s %s %s", part1, part2, part3)
 
@@ -21,6 +25,8 @@ func main() {
 
 	// Print the sentence
 	fmt.Println(sentence)
+
+	//--	LENGTH
 
 	// Get number of bytes in the sentence
 	// (!) If you want get number of utf-symbols you should use `utf8.RuneCountInString`
@@ -33,6 +39,8 @@ func main() {
 	firstChar := sentence[0]
 
 	fmt.Println("First byte: ", firstChar)
+
+	//--	ITERATION
 
 	// Iteration all utf-symbols
 	for index, runeValue := range sentence {
