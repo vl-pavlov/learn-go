@@ -49,4 +49,21 @@ func main() {
 	if maps.Equal(firstMap, secondMap) {
 		fmt.Println("firstMap == secondMap")
 	}
+
+	map1["key1"] = 2
+
+	if _, ok := map1["key1"]; ok {
+		// 'key1' exists within the map
+		fmt.Println("'key1' exists")
+	} else {
+		fmt.Println("'key1' doesn't exist")
+	}
+
+	if _, ok := map1["key5"]; ok {
+		// 'key5' exists within the map
+		fmt.Println("'key5' exists")
+	} else {
+		fmt.Println("'key5' doesn't exist")
+	}
+
 }
