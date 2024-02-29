@@ -2,12 +2,12 @@
 
 A binary tree is a hierarchical data structure in which each node has a maximum of two children, called the left child and the right child.
 
-![Binary tree](https://github.com/vl-pavlov/learn-go/blob/main/001-data-structures/binary-tree/binary-tree.png?raw=true)
-
 * Algorithms like traversing, searching, insertion and deletion become easier to understand, to implement.
 * Keeping data sorted in a Binary Search Tree (BST) makes searching very efficient.
 * Balancing trees is easier to do with a limited number of child nodes, using an AVL Binary Tree for example.
 * Binary Trees can be represented as arrays, making the tree more memory efficient.
+
+![Binary tree](https://github.com/vl-pavlov/learn-go/blob/main/001-data-structures/binary-tree/binary-tree.png?raw=true)
 
 A **balanced** Binary Tree has at most 1 in difference between its left and right subtree heights, for each node in the tree.
 
