@@ -10,7 +10,7 @@ import (
 type BinaryNode struct {
 	left  *BinaryNode // Pointer to the left child node
 	right *BinaryNode // Pointer to the right child node
-	data  int64       // Integer data value stored in the node
+	data  int         // Integer data value stored in the node
 }
 
 // BinaryTree represents a binary tree with a root node.
@@ -19,7 +19,7 @@ type BinaryTree struct {
 }
 
 // insert inserts a new integer value into the binary tree.
-func (t *BinaryTree) insert(data int64) *BinaryTree {
+func (t *BinaryTree) insert(data int) *BinaryTree {
 	if t.root == nil {
 		t.root = &BinaryNode{data: data, left: nil, right: nil}
 	} else {
@@ -29,7 +29,7 @@ func (t *BinaryTree) insert(data int64) *BinaryTree {
 }
 
 // insert inserts a new integer value into the binary tree, recursively traversing the tree to find the correct location.
-func (n *BinaryNode) insert(data int64) {
+func (n *BinaryNode) insert(data int) {
 	if n == nil {
 		return
 	} else if data <= n.data {
