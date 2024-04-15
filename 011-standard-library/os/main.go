@@ -2,18 +2,40 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 )
 
 func main() {
-	// function os.Hostname() example
+
+	//--	HOST NAME
 
 	str, err := os.Hostname()
+	if err != nil {
+		log.Fatal(err)
+	}
 
-	fmt.Println("str: %T, %v\n", str, str)
-	fmt.Println("err: %T, %v\n", err, err)
+	fmt.Printf("Host name: %v\n", str)
 
-	// str: string, [Name]
-	// err: <nil>, <nil>
+	//--	ENVIRONMENT VARIABLES
+
+	home := os.Getenv("HOME")
+	fmt.Println("Home directory:", home)
+
+	err = os.Setenv("MYVAR", "myvalue")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	myVar := os.Getenv("MYVAR")
+	fmt.Println("MYVAR:", myVar)
+
+	err = os.Unsetenv("MYVAR")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	myVar = os.Getenv("MYVAR")
+	fmt.Println("MYVAR:", myVar)
 
 }
