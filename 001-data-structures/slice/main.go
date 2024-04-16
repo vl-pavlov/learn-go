@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"slices"
+	"sort"
 )
 
 func main() {
@@ -77,5 +78,31 @@ func main() {
 
 	copy(array[:], slice)
 	fmt.Println("Array: ", array, " from ", slice)
+
+	//--	SORTING
+
+	intSlice := []int{5, 9, 14, 351, 614, 999} // sorted
+	fmt.Println(sort.IntsAreSorted(intSlice))  // true
+
+	intSlice = []int{10, 5, 25, 351, 14, 9}   // unsorted
+	fmt.Println(sort.IntsAreSorted(intSlice)) // false
+
+	sort.Ints(intSlice)
+	fmt.Println("Slice of integer after  Sort:", intSlice)
+
+	mobile := []struct {
+		Brand string
+		Price int
+	}{
+		{"Nokia", 500},
+		{"Samsung", 415},
+		{"Apple", 750},
+		{"Sony", 625},
+	}
+
+	sort.Slice(mobile, func(i, j int) bool { return mobile[i].Price < mobile[j].Price })
+	for _, v := range mobile {
+		fmt.Println(v.Brand, v.Price)
+	}
 
 }
