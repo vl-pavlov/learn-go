@@ -13,12 +13,12 @@ Bitwise operators deal with bit – 0 and 1 and work only on integer variables h
 
 ## Bitwise OR (|)
 
-| x | y | | |
-|---|---|---|
-| 0 | 0 | 0 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 1 |
+| x | y | &#124; |
+|---|---|--------|
+| 0 | 0 | 0      |
+| 0 | 1 | 1      |
+| 1 | 0 | 1      |
+| 1 | 1 | 1      |
 
 ## Bitwise XOR (^)
 
