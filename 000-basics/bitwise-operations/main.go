@@ -35,4 +35,16 @@ func main() {
 
 	resultShift = 8 >> 2     // Right shift by 2 positions
 	fmt.Println(resultShift) // Output: 2 (1000 >> 2 = 0010)
+
+	//--	SWAP NUMBERS
+
+	int1 := 10
+	int2 := 8
+
+	int1 = int1 ^ int2
+	int2 = int1 ^ int2
+	int1 = int1 ^ int2
+
+	fmt.Println(int1, int2)
+
 }
